@@ -6,7 +6,11 @@
 </head>
 <body>
 <h1>
+<<<<<<< HEAD
 	Junchang
+=======
+	asd
+>>>>>>> branch 'master' of https://github.com/leetaehyeon123/UH.git
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
