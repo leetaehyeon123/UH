@@ -3,9 +3,11 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="com.uh.mappers.base_mapper">
+<mapper namespace="com.uh.mappers.test_mapper">
 	
-
+	<select id="select" resultType="com.uh.vo.TestVo">
+		SELECT name FROM test_table ;
+	</select>
 
 
 </mapper>
