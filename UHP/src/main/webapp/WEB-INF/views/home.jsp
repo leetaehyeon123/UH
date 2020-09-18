@@ -7,8 +7,8 @@
 <body>
 <h1>
 <<<<<<< HEAD
-	Junchang
-	asd
+	Junchang   
+	asd    
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
