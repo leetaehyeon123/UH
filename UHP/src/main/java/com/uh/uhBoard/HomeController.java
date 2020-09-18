@@ -14,11 +14,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
+	@RequestMapping(value = {"/","/main"}, method = RequestMethod.GET)
+	public String main(Locale locale, Model model) {
 
 		
-		return "/test_view/test01";
+		return "/main_view/main";
 	}
+
 	
 }
