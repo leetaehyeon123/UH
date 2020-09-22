@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body{
 	margin:0;padding:0;
 }
@@ -9,13 +10,18 @@ html{
 height: 120px;/* top_bar 의 높이 */
 }
 .top_bar_container{
-width: 100vmax; background-color:#d8e6e5; position: absolute; top: 0px; left: 0px;
+width: 100vmax;  position: absolute; top: 0px; left: 0px;
 }
 .search_div{
-height:50px; width:100%; margin: 50px auto; text-align: center; min-width: 900px;
+height:50px; width:100%; margin: 50px auto; text-align: center; min-width: 1000px;
 }
 .logo{
-position: absolute; width: 240px; height: 100px; top: 10px; left:10px; cursor: pointer;
+position: absolute;
+cursor: pointer;
+font-size:46px;
+font-family: 'Nosifer', cursive;
+color: #d17600;
+padding: 22px 0px 0px 40px;
 }
 
  .search_combo,.search_combo:not(checked){

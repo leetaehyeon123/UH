@@ -5,7 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
 <link href="resources/CSSs/bar_css/top_bar.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -18,8 +20,10 @@
 <div class="top_bar_div top_bar_container" >
 
 
-	<!-- 이미지 로고  -->
-	<img class="logo" src="resources/imgs/top_bar_img/logo.jpg" >
+	<!-- 로고  -->
+	<div class="logo" >
+	legend
+	</div>
 
 
 	<!-- 검색창 구성 div -->
