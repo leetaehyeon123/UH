@@ -25,13 +25,13 @@
 	<p>　</p>
     <div style="float: left">
     
-    <input type="text" name="id" placeholder="ID" style="width:300px;height:25px;font-size:30px; font-family:궁서;">
+    <input type="text" name="id" placeholder="ID" style="width:300px;height:30px;font-size:30px; font-family:Comic Sans MS;">
     <br><br>
-    <input type="password" name="password" placeholder="password" style="width:300px;height:25px;font-size:30px;font-family:궁서;">
+    <input type="password" name="password" placeholder="password" style="width:300px;height:30px;font-size:30px;font-family:Comic Sans MS;">
     </div>
-    <input type="button" class="button" name="login button" value="로그인" style="width:90px;height:85px; font-size:25px;"><br>
+    <input type="button" class="button" name="login button" value="로그인" style="width:90px;height:90px; font-size:25px; "><br>
     <pre>
-    <a href="" style =" text-decoration:none;color: blue; font-family:고딕;">ID찾기 </a><a href="" style =" text-decoration:none;color: blue; font-family:돋음;">비밀번호 찾기 </a><a href="http://localhost:9101/uhBoard/singup" style =" text-decoration:none;color: blue; font-family:고딕;">회원가입 </a>
+    <a href="" style =" text-decoration:none;color: blue; font-family:Comic Sans MS;">ID찾기 </a><a href="" style =" text-decoration:none;color: blue; font-family:Comic Sans MS;">비밀번호 찾기 </a><a href="http://localhost:9101/uhBoard/singup" style =" text-decoration:none;color: blue; font-family:Comic Sans MS;">회원가입 </a>
     </pre>
     <br>
     <img  src="resources/imgs/login_img/kakao.png" width="400" height="80" onclick="kakaoLogin()"><br>
