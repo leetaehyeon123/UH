@@ -23,8 +23,8 @@
 	<p>　</p>
 	<p>　</p>
 	<p>　</p>
-	<p>ID</p>
-    <input type="text" name="id" style="width:300px;height:25px;font-size:30px ;">
+
+    <input type="text" name="id" style="width:300px;height:25px;font-size:30px ;" placeholder="아이디">
     <p>비밀번호</p>
     <input type="password" name="password" style="width:300px;height:25px;font-size:30px;">
     <p>　</p>
