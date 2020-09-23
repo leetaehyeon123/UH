@@ -23,7 +23,7 @@
 	<p>　</p>
 	<h1 style="font-family:궁서 ">로그인</h1>
 	<p>　</p>
-<<<<<<< HEAD
+
     <div style="float: left">
     
     <input type="text" name="id" placeholder="ID" style="width:300px;height:30px;font-size:30px; font-family:Comic Sans MS;">
@@ -40,22 +40,7 @@
 	<img  src="resources/imgs/login_img/naver.png" width="400" height="80" onclick="naverLogin()"><br>
 	<img  src="resources/imgs/login_img/facebook.png" width="400" height="80" onclick="facebookLogin()">
 	</div>
-=======
-	<p>　</p>
-	<p>　</p>
 
-    <input type="text" name="id" style="width:300px;height:25px;font-size:30px ;" placeholder="아이디">
-    <p>비밀번호</p>
-    <input type="password" name="password" style="width:300px;height:25px;font-size:30px;">
-    <p>　</p>
-    <button class="button" name="login button" style="width:300px;height:40px; font-size:25px;">로그인</button><br>
-    <pre><a href="">ID찾기 </a><a href="">비밀번호 찾기 </a><a href="http://localhost:9101/uhBoard/singup">회원가입 </a></pre><br>
-    <img  src="resources/imgs/login_img/kakao.png" width="400" height="60" onclick="kakaoLogin()"><br>
-	<img  src="resources/imgs/login_img/google.png" width="400" height="60" onclick="googleLogin()"><br>
-	<img  src="resources/imgs/login_img/naver.png" width="400" height="60" onclick="naverLogin()"><br>
-	<img  src="resources/imgs/login_img/facebook.png" width="400" height="60" onclick="facebookLogin()">
-
->>>>>>> branch 'master' of https://github.com/leetaehyeon123/UH.git
 
 
 </body>

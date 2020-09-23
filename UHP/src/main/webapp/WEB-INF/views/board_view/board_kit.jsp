@@ -13,12 +13,14 @@
 			border:1px solid blue;			
 			font-size: 40px;			
 		}
+		
 		.board_div{
 			border:1px solid blue;	
 		}
 		.board_post_div{
 			border:1px solid black;
-			height: 120px;
+			height: 100px;
+			margin:10px;
 		}
 		.board_post_img{
 			float:left;
@@ -27,10 +29,11 @@
 		.board_post_text_div{
 			margin:5px 0px 0px 175px;
 		}
-		.board_post_title_div,.board_post_sub_div{
-			border:1px solid red;
-			height: 50%;
-		}
+			.board_post_title_div,.board_post_sub_div{
+		
+				height: 50%;
+			}
+			
 		.board_page_num_div{
 			border:1px solid blue;	
 			text-align: center;
@@ -54,7 +57,7 @@
 			
 			<div class="board_post_div">
 			
-				<img class="board_post_img" src="resources/imgs/board_img/cat3.jpg" width="160px" height="110px"><!-- 게시글 사진 -->
+				<img class="board_post_img" src="resources/imgs/board_img/cat3.jpg" width="140px" height="90px"><!-- 게시글 사진 -->
 				
 					<div class="board_post_text_div">
 					

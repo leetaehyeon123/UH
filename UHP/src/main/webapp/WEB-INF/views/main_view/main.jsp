@@ -13,12 +13,12 @@
 <jsp:include page="../bar_view/top_bar.jsp"/>
 
 
-<div class="context_main" style="margin: auto; width:70%" >
+<div class="context_main" style="margin: auto;width: 1050px;" >
 	<!-- left bar -->
 	<jsp:include page="../bar_view/left_bar.jsp"/>
 	
 	
-	<div class="context_container" style="min-width: 790px;">
+	<div class="context_container" >
 	<!-- 
 	 context-container은 bar들이 자리를 차지고하고 남은 공간.즉 페이지의 내용이 들어갈 공간이다.
 	 bar를 참조하는 페이지라면 꼭 내용을 class="context-container"로 설정한 div안에 담아준다.
