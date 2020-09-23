@@ -12,7 +12,12 @@
 <!-- top bar  -->
 <jsp:include page="../bar_view/top_bar.jsp"/>
 
+<<<<<<< HEAD
 <div class="context_main" style="margin: auto; width: 65%" >
+=======
+
+<div class="context_main" style="margin: auto; width:70%" >
+>>>>>>> branch 'master' of https://github.com/leetaehyeon123/UH.git
 	<!-- left bar -->
 	<jsp:include page="../bar_view/left_bar.jsp"/>
 	
@@ -52,5 +57,6 @@
 	
 	</div>
 </div>
+
 </body>
 </html>

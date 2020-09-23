@@ -10,6 +10,7 @@
 
 <!-- top bar  -->
 <jsp:include page="../bar_view/top_bar.jsp"/>
+<div class="context_main" style="margin: auto; width:65%" >
 <!-- left bar -->
 <jsp:include page="../bar_view/left_bar.jsp"/>
 
@@ -30,7 +31,7 @@
 
 </div>
 
-
+</div>
 
 
 
