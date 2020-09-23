@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 <modelVersion>4.0.0</modelVersion>
 	<groupId>com.th</groupId>
-	<artifactId>inter</artifactId>
-	<name>interceptor</name>
+	<artifactId>uhp</artifactId>
+	<name>uhproject</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>

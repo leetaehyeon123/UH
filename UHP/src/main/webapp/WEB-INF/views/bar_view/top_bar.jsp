@@ -5,30 +5,45 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<link href="resources/CSSs/bar_css/top_bar.css" rel="stylesheet">
+
 </head>
 <body>
-<div style="width: 100%; height: 120px ; background-color:#d8e6e5; ">
 
-<img src="resources/imgs/bar_img/cat3.jpg" style="position: absolute; width: 200px; height: 100px; top: 10px; left:10px;">
+<!-- top_bar 화면 구성 div가  서로 위치값에 영향을 받지 않는 position: absolute 으로 설정이 되어 있으므로
+	같은 크기의 빈 div를 넣어 주어 margin의 역할을 한다. -->
+<div class="top_bar_div" ></div>
 
-	<div style="text-align: center;  line-height: 120px; min-width: 730px;">
-	
-	
-	<div style="width: 500px ; border: 1px sloid black; margin: 0px auto;">
-		<form>
-		<select name="search_mod">
+
+<!-- top_bar 화면 구성 div -->
+<div class="top_bar_div top_bar_container" >
+
+
+	<!-- 로고  -->
+	<div class="logo" >
+	legend
+	</div>
+
+
+	<!-- 검색창 구성 div -->
+	<div class="search_div">
+	<form>
+		<select class="search_combo" name="search_mod" >
     		<option value="게시판">게시판</option>
     		<option value="작성자">작성자</option>
     		<option value="제목">제목</option>
 		</select>
-		<input type="text" >
-		<input type="submit" value="검색"> 
-		</form>
+		<input class="search_input" type="text" placeholder="search on enter">
+	</form>
 	</div>
 	
-	</div>
 	
-</div>
+	
+</div>	
+	
+	
+
 
 </body>
 </html>
