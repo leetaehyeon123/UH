@@ -11,6 +11,8 @@
 
 <!-- top bar  -->
 <jsp:include page="../bar_view/top_bar.jsp"/>
+
+<div>
 <!-- left bar -->
 <jsp:include page="../bar_view/left_bar.jsp"/>
 
@@ -49,6 +51,6 @@
 
 
 </div>
-
+</div>
 </body>
 </html>
