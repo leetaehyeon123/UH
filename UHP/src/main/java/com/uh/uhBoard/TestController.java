@@ -30,7 +30,6 @@ public class TestController {
 	public String home(Locale locale, Model model) {
 
 		model.addAttribute("list",test_dao.select());
-		
 		return "/test_view/db_test";
 	}
 	
