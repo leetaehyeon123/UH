@@ -34,7 +34,7 @@
     		<option value="작성자">작성자</option>
     		<option value="제목">제목</option>
 		</select>
-		<input class="search_input" type="text" placeholder="search on enter">
+		<input class="search_input" type="text" placeholder="search">
 	</form>
 	</div>
 	
