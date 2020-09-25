@@ -11,14 +11,22 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application home page.
  */
 @Controller
-public class LoginController {
+public class SignController {
 	
 
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login(Locale locale, Model model) {
+	@RequestMapping(value = "/sign_in", method = RequestMethod.GET)
+	public String sign_in(Locale locale, Model model) {
 
 		
-		return "/login_view/login";
+		return "/sign_view/sign_in";
+	}
+	
+
+	@RequestMapping(value = "/sign_up", method = RequestMethod.GET)
+	public String sign_up(Locale locale, Model model) {
+
+		
+		return "/sign_view/sign_up";
 	}
 	
 }
