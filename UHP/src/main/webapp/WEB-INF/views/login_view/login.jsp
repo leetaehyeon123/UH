@@ -23,10 +23,6 @@
 	<p>　</p>
 	<h1 style="font-family :궁서 ">로그인</h1>
 	<p>　</p>
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/leetaehyeon123/UH.git
     <div style="float: left">
     
     <input type="text" name="id" placeholder="ID" style="width:300px;height:30px;font-size:30px; font-family:Comic Sans MS;">
