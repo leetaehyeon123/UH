@@ -26,14 +26,35 @@
 	
 	<!-- dao 객체 -->
 	<bean id="test_dao" class="com.uh.dao.TestDao">
-	<constructor-arg name="sqlSession" ref="sqlSession"></constructor-arg>
+		<constructor-arg name="sqlSession" ref="sqlSession"></constructor-arg>
 	</bean>
+	
+	<bean id="post_dao" class="com.uh.dao.PostDao">
+		<constructor-arg name="sqlSession" ref="sqlSession"></constructor-arg>
+	</bean>
+	
+	<bean id="member_dao" class="com.uh.dao.MemberDao">
+		<constructor-arg name="sqlSession" ref="sqlSession"></constructor-arg>
+	</bean>
+	<bean id="board_dao" class="com.uh.dao.BoardDao">
+		<constructor-arg name="sqlSession" ref="sqlSession"></constructor-arg>
+	</bean>
+	<bean id="like_dao" class="com.uh.dao.LikeDao">
+		<constructor-arg name="sqlSession" ref="sqlSession"></constructor-arg>
+	</bean>
+
+	
+	
 	
 	
 	
 	<!-- Vo 객체 -->
-	<bean id="test_vo" class="com.uh.vo.TestVo"></bean>
-	
+	<bean id="test_vo" class="com.uh.vo.TestVo"></bean>	
+	<bean id="post_vo" class="com.uh.vo.PostVo"></bean>
+	<bean id="member_vo" class="com.uh.vo.MemberVo"></bean>
+	<bean id="board_vo" class="com.uh.vo.BoardVo"></bean>
+	<bean id="like_vo" class="com.uh.vo.LikeVo"></bean>
+	<bean id="reply_vo" class="com.uh.vo.ReplyVo"></bean>
 
 	
 	

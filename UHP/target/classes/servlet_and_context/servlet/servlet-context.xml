@@ -20,9 +20,27 @@
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
+		<!-- 로그인 인터셉터 -->
+		<beans:bean id="loginInterceptor" class="com.uh.interceptor.LoginInterceptor"></beans:bean>
+		
+		<interceptors>
+  		  	<interceptor>
+      		  <mapping path="/post_create"/>                
+      		  <beans:ref bean="loginInterceptor"/>
+   			 </interceptor>
+		</interceptors>
 	
 	<context:component-scan base-package="com.uh.uhBoard" />
 	
 	
-	
+	<!-- 파일업로드	 -->
+<beans:bean id="multipartResolver"
+	class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	<beans:property name="maxUploadSize" value="10485760"></beans:property>
+</beans:bean>
+
+<beans:bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"> <beans:property name="contentType" value="application/json;charset=UTF-8" /> </beans:bean>
+
+
+
 </beans:beans>

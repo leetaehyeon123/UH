@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.uh.mappers.member_mapper">
+
+	<select id="login" resultType="com.uh.vo.MemberVo">
+		SELECT  *
+			From member_table
+			WHERE member_id=#{member_id}
+			AND member_pw=#{member_pw}
+	</select>
+	<select id="checkId" resultType="com.uh.vo.MemberVo">
+		SELECT  * From member_table	WHERE member_id=#{member_id};
+	</select>
+	
+	<insert id="insert">
+		insert into member_table(member_name,member_nick,member_id,member_pw,member_phone) values(#{member_name},#{member_nick},#{member_id},#{member_pw},#{member_phone});
+	</insert>
+	<update id="updateSignUp">
+	update member_table set member_name=#{member_name},member_id=#{member_id},member_pw=#{member_pw} where member_phone = #{member_phone}
+	</update>
+	<select id="selectPlatform" resultType="com.uh.vo.MemberVo">
+		SELECT * from member_table WHERE ${platform} = #{email};
+	</select>
+	<select id="selectByPhone" resultType="com.uh.vo.MemberVo">
+		SELECT * from member_table WHERE member_phone = #{member_phone};
+	</select>
+	<update id="updateYesNick">
+		update member_table set ${platform} = #{email} where member_phone = #{member_phone};	
+	</update>
+	<select id="checkNick" resultType="com.uh.vo.MemberVo">
+		SELECT * from member_table WHERE member_nick = #{member_nick};
+	</select>
+	<insert id="insertNoNick" >
+		insert into member_table (${platform},member_nick,member_phone) values( #{email},#{member_nick},#{member_phone}) ;		
+	</insert>
+	<select id="select_member_idx" parameterType="String" resultType="int">
+		SELECT member_idx from member_table WHERE member_nick = #{nick};
+	</select>
+
+
+
+</mapper>

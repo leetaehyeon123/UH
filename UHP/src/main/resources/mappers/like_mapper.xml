@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.uh.mappers.like_mapper">
+
+	<select id="select_idx" resultType="int">
+		select like_idx from like_table where like_post_idx=#{like_post_idx} and like_member_nick=#{like_member_nick};
+	</select>
+	
+	<select id="has_like" resultType="int">
+		select count(like_idx) from like_table where like_post_idx=#{like_post_idx} and like_member_nick=#{like_member_nick};
+	</select>
+	
+	<select id="count_like" resultType="int">
+		select count(like_idx) from like_table where like_post_idx=#{like_post_idx};
+	</select>
+	
+	<insert id="like_up">
+		insert into like_table (like_post_idx,like_member_nick) values(#{like_post_idx},#{like_member_nick});
+	</insert>
+
+	<delete id="like_down">
+		delete from like_table where like_idx=#{like_idx};	
+	</delete>
+	
+
+
+</mapper>

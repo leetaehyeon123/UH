@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.uh.mappers.post_mapper">
+	
+	
+	<select id="select" resultType="com.uh.vo.PostVo"> <!-- 게시판 페이지에서 출력을 위한 쿼리  3번 버전 -->
+		select * from 
+		(select *, rank() over( order by post_idx desc) as ranking , (select count(like_idx) from like_table where like_post_idx = post.post_idx) as like_count
+	 	from post_table post where post_board_name = #{post_board_name} ) as ranking 
+		where ranking between ${start} and ${end} ;
+	</select>
+	
+	<select id="select_this" resultType="com.uh.vo.PostVo"> <!-- 게시판 페이지에서 출력을 위한 쿼리  2번 버전 -->
+		select * from 
+		(select *, rank() over( order by post_idx desc) as ranking , (select count(like_idx) from like_table where like_post_idx = post.post_idx) as like_count
+	 	from post_table post where post_board_name = #{post_board_name} and ${search_mode} Like #{search_str}
+	 	and post_title not in('삭제된게시글입니다.')) as ranking
+		where ranking between ${start} and ${end} ;
+		
+	</select>
+	<select id="select_searchAll" resultType="com.uh.vo.PostVo"> <!-- 게시판 페이지에서 출력을 위한 쿼리  1번 버전 -->
+		select * from 
+		(select *, rank() over( order by post_idx desc) as ranking , (select count(like_idx) from like_table where like_post_idx = post.post_idx) as like_count
+	 	from post_table post where ${search_mode} Like #{search_str}
+	 	and post_title not in('삭제된게시글입니다.')) as ranking
+		where ranking between ${start} and ${end} ;
+		
+	</select>
+	<select id="select_content" resultType="com.uh.vo.PostVo"><!--  게시글 페이지에서 출력하기 위한 쿼리 -->
+		SELECT * FROM post_table where post_idx=${post_idx};
+	</select>
+
+	<select id="select_my_idx" resultType="com.uh.vo.PostVo"><!--  게시글 작성후 작성한 게시글의 인덱스를 검색하는 쿼리-->
+		SELECT post_idx FROM post_table where post_member_nick=#{post_member_nick} ORDER BY post_date DESC;
+	</select>
+
+	<insert id="insert">
+		insert into post_table(post_board_name,post_title,post_member_nick,post_con,post_img,post_view) 
+		values(#{post_board_name},#{post_title},#{post_member_nick},#{post_con},#{post_img},#{post_view})
+	</insert>
+	<select id="getRowTotal" resultType="int" parameterType="com.uh.vo.PostVo">
+		select count(*) from post_table where post_board_name = #{post_board_name};
+	</select>
+	<select id="getRowThis" resultType="int" parameterType="com.uh.vo.PostVo">
+		select count(*) from post_table where post_board_name = #{post_board_name}and ${search_mode} Like #{search_str} ;
+	</select>
+	<select id="getRowSearchAll" resultType="int" parameterType="com.uh.vo.PostVo">
+		select count(*) from post_table where ${search_mode} Like #{search_str};
+	</select>
+	
+	<update id="update">
+		update post_table set post_con=#{post_con} where post_idx=#{post_idx};
+	</update>
+	<update id="delete">
+		update post_table set post_title='삭제된게시글입니다.' where post_idx=#{post_idx};
+	</update>
+	<update id="view_up">
+		update post_table set post_view = post_view+1 where post_idx=#{post_idx};
+	</update>
+
+	<select id="select_reply" resultType="com.uh.vo.ReplyVo">
+		SELECT * FROM reply_table WHERE reply_post_idx = #{post_idx} ORDER BY reply_idx DESC;
+	</select>
+	
+	<insert id="insert_reply">
+		INSERT into reply_table(reply_post_idx, reply_member_nick, reply_con, reply_step, reply_depth)
+		values(#{reply_post_idx},#{reply_member_nick},#{reply_con},0,0)
+	</insert>
+</mapper>

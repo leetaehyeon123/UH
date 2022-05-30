@@ -7,40 +7,68 @@
 <title>Insert title here</title>
 </head>
 <script>
+function kakaoLogin(){
+	location.href='<%=request.getAttribute("kakaoLoginUrl")%>'
+}
+function googleLogin(){
+	location.href='<%=request.getAttribute("googleLoginUrl")%>'
+}
+function naverLogin(){
+	location.href='<%=request.getAttribute("naverLoginUrl")%>'
+}
+function facebookLogin(){
+	location.href='<%=request.getAttribute("faceLoginUrl")%>'
+}
 </script>
 <style>
 	.button{
-	background-color:#6CFFFF;
-	color: white;
+	color: black;
 	}
 	.body{
 	text-align:center;
 	}
+	.find_up{
+		padding: 30px;
+	}
+	.line_border{
+		width: 300px;
+		border: 1px solid #dae1e6;
+		margin: 10px auto;
+	}
 	
 </style>
 <body class="body" bgcolor="">
-	<div style="width:450px; margin: 0 auto;">
-	<p>　</p>
-	<h1 style="font-family:궁서 ">로그인</h1>
-	<p>　</p>
+<!-- top bar  -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script><script src="resources/JSs/bar_js/get_top_bar.js"></script><div id="top_bar" ></div>
 
-    <div style="float: left">
-    
-    <input type="text" name="id" placeholder="ID" style="width:300px;height:30px;font-size:30px; font-family:Comic Sans MS;">
-    <br><br>
-    <input type="password" name="password" placeholder="password" style="width:300px;height:30px;font-size:30px;font-family:Comic Sans MS;">
-    </div>
-    <input type="button" class="button" name="login button" value="로그인" style="width:90px;height:90px; font-size:25px; "><br>
-    <pre>
-    <a href="" style =" text-decoration:none;color: blue; font-family:Comic Sans MS;">ID찾기 </a><a href="" style =" text-decoration:none;color: blue; font-family:Comic Sans MS;">비밀번호 찾기 </a><a href="http://localhost:9101/uhBoard/singup" style =" text-decoration:none;color: blue; font-family:Comic Sans MS;">회원가입 </a>
-    </pre>
+<div class="context_main" style="margin: auto; width: 600px;" >
+
+	<div style="width:550px; margin: 30px auto; padding:60px 10px;border: 1px solid #dae1e6;">	
+
+
+ 
+<form action="sign_in.do">
+    <input type="text" name="id" placeholder="ID" style="width:300px;height:30px;font-size:30px; font-family:Comic Sans MS;margin-bottom: 10px;">
     <br>
+    <input type="password" name="password" placeholder="password" style="width:300px;;height:30px;font-size:30px;font-family:Comic Sans MS;margin-bottom: 10px;">
+
+    <input type="submit" class="button"  value="로그인" style="width:300px; font-size:25px;font-family:Comic Sans MS; "><br>
+</form> 
+
+   	<div class="find_up">
+    <a href='find_id' style =" text-decoration:none;color: blue; font-family:Comic Sans MS;">ID,PW찾기 </a>
+    |
+    <a href="sign_agree" style =" text-decoration:none;color: blue; font-family:Comic Sans MS;">회원가입 </a>
+ 	</div>
+ 	
+    <br>
+    <div class="line_border"></div>
     <img  src="resources/imgs/login_img/kakao.png" width="400" height="80" onclick="kakaoLogin()"><br>
 	<img  src="resources/imgs/login_img/google.png" width="400" height="80" onclick="googleLogin()"><br>
 	<img  src="resources/imgs/login_img/naver.png" width="400" height="80" onclick="naverLogin()"><br>
 	<img  src="resources/imgs/login_img/facebook.png" width="400" height="80" onclick="facebookLogin()">
 	</div>
-
+</div>
 
 
 </body>

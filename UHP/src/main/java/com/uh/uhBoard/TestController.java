@@ -32,5 +32,15 @@ public class TestController {
 		model.addAttribute("list",test_dao.select());
 		return "/test_view/db_test";
 	}
-	
+	@RequestMapping(value = "/test2222", method = RequestMethod.GET)
+	public String test2222(Locale locale, Model model) {
+
+		return "/test_view/test2222";
+	}
+	@RequestMapping(value = "/test1111", method = RequestMethod.GET)
+	public String test1111(Locale locale, Model model) {
+
+		
+		return "/test_view/test1111";
+	}
 }

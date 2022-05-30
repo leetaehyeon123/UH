@@ -1,20 +1,51 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+String page_num=request.getParameter("page_num");
+String post_board_name=request.getParameter("post_board_name");
+String search_mode=request.getParameter("search_mode");
+String search_str=request.getParameter("search_str");
+String my=request.getParameter("my");
+if(my==null){
+	my="";
+}
+
+if(post_board_name==null){
+	
+	response.sendRedirect("main");
+}
+
+
+%>
  
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript">
+	window.onload=get_board_kit(<%=page_num%>,'<%=post_board_name%>','<%=search_mode%>','<%=search_str%>');
+		function get_board_kit(page_num,post_board_name,search_mode,search_str){
+			$.ajax({ 
+			type: 'get' , 
+			url: 'board_kit?page_num='+page_num+'&post_board_name='+post_board_name+'&search_mode='+search_mode+'&search_str='+search_str+'&my=<%=my%>' , 
+			success: function(data) { 
+				$("#board_kit_container").html(data); 
+				} 
+			}); 
+		}
+	</script>
 </head>
 <body>
 
 <!-- top bar  -->
-<jsp:include page="../bar_view/top_bar.jsp"/>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script><script src="resources/JSs/bar_js/get_top_bar.js"></script><div id="top_bar" ></div>
+
 <div class="context_main" style="margin: auto; width: 1260px;" >
 <!-- left bar -->
-<jsp:include page="../bar_view/left_bar.jsp"/>
-
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script><script src="resources/JSs/bar_js/get_left_bar.js"></script><div id="left_bar" ></div>
+	
 
 <div class="context_container" >
 <!-- 
@@ -25,11 +56,7 @@
  -->
 	
 	
-	
-
-		<!-- 게시글 목록 구현부 -->
-		<jsp:include page="board_kit.jsp"/>
-
+<div id="board_kit_container"></div>
 
 
 

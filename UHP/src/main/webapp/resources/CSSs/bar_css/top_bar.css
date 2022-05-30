@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 body{
 	margin:0;padding:0;
 }
@@ -10,7 +8,9 @@ html{
 height: 120px;/* top_bar 의 높이 */
 }
 .top_bar_container{
-width: 100vmax;  position: absolute; top: 0px; left: 0px;
+width: 100%;position: absolute; top: 0px; left: 0px;
+background-color: #f7f9fa;
+border-bottom: 1px solid #dae1e6;
 }
 .search_div{
 height:50px; width:100%; margin: 50px auto; text-align: center; min-width: 1000px;
