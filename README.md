@@ -3,4 +3,4 @@
 프레임워크 : Spring4</br>
 사용언어 : Java , JSP , Javascript , jQuery , HTML</br>
 서버 : Apache Tomcat8.5 , MySQL8.19</br>
-API : 문자인증(Coolsms) , 로그인(Kakao/google/facebook/naver) , 광고(adpick)</br>
+문자인증(Coolsms) , 로그인(Kakao/google/facebook/naver) , 광고(adpick)</br>
