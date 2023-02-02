@@ -25,3 +25,5 @@
 글제목 검색
 ![image](https://user-images.githubusercontent.com/61938906/216236533-d91581d4-e733-4604-9821-a54e022bb741.png)
 작성자 검색
+![image](https://user-images.githubusercontent.com/61938906/216236956-e776c5d9-326a-4c23-9367-8d681ee44bbc.png)
+게시판에서 
