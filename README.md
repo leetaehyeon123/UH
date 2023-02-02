@@ -19,7 +19,7 @@
 ![image](https://user-images.githubusercontent.com/61938906/216224944-fe3066dd-cdd8-4b75-ba6c-df4b11ed9b85.png)</br>
 좌측에 게시판 목록이 나오며 클릭시 펼쳐진다. 쿠키에 펼쳐진 값이 저장 되고 페이지를 이동해도 계속 열려 있는 상태를 유지한다.</br>
 
---
+----
 
 # 로그인
 ![image](https://user-images.githubusercontent.com/61938906/216225449-1e32881e-2e24-4b82-a7dc-56a33425a30a.png)
