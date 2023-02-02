@@ -29,4 +29,4 @@
 게시판에서 검색
 # 게시글
 ![image](https://user-images.githubusercontent.com/61938906/216237524-c55ba335-b60e-4645-b441-3ab307195ee1.png)
-게시글 내용,추천,
+게시글 내용,추천,댓글
