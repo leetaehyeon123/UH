@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
 --
 -- Host: localhost    Database: uhdb
 -- ------------------------------------------------------
--- Server version	8.0.19
+-- Server version	8.0.31
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -27,7 +27,7 @@ CREATE TABLE `like_table` (
   `like_post_idx` int DEFAULT NULL,
   `like_member_nick` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`like_idx`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `like_table` (
 
 LOCK TABLES `like_table` WRITE;
 /*!40000 ALTER TABLE `like_table` DISABLE KEYS */;
-INSERT INTO `like_table` VALUES (1,1,'1'),(2,375,'이태현'),(3,395,'행신동냐옹이'),(4,393,'<span style=\"color:red\">운영자</span>'),(5,399,'jin'),(6,386,'123'),(7,386,'<span style=\"color:red\">운영자</span>'),(8,386,'박성우'),(9,386,'jin'),(10,391,'123'),(12,402,'123');
+INSERT INTO `like_table` VALUES (1,1,'1'),(2,375,'이태현'),(3,395,'행신동냐옹이'),(4,393,'<span style=\"color:red\">운영자</span>'),(5,399,'jin'),(6,386,'123'),(7,386,'<span style=\"color:red\">운영자</span>'),(8,386,'박성우'),(9,386,'jin'),(10,391,'123'),(12,402,'123'),(13,397,'<span style=\"color:red\">운영자</span>');
 /*!40000 ALTER TABLE `like_table` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-31  0:25:55
+-- Dump completed on 2023-02-02 14:35:56
