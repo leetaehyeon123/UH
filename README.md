@@ -21,3 +21,7 @@
 # 검색
 ![image](https://user-images.githubusercontent.com/61938906/216236095-c262787e-3d37-4dc2-bde7-aeee0a46262d.png)
 게시판 검색
+![image](https://user-images.githubusercontent.com/61938906/216236301-4cd17b27-9484-4a0d-9539-8536eca4a019.png)
+글제목 검색
+![image](https://user-images.githubusercontent.com/61938906/216236533-d91581d4-e733-4604-9821-a54e022bb741.png)
+작성자 검색
