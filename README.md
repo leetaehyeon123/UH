@@ -18,3 +18,6 @@
 # 로그인 페이지
 ![image](https://user-images.githubusercontent.com/61938906/216225449-1e32881e-2e24-4b82-a7dc-56a33425a30a.png)
 사이트 아이디 패스워드,카카오,구글,네이버,페이스북로 로그인 또는 회원가입이 가능하다.
+# 검색
+![image](https://user-images.githubusercontent.com/61938906/216236095-c262787e-3d37-4dc2-bde7-aeee0a46262d.png)
+게시판 검색
